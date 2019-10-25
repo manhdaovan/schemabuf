@@ -495,7 +495,11 @@ func parseColumn(s *Schema, msg *Message, col Column) error {
 	case "bigint":
 		if col.Nullable() {
 			s.AppendImport("app/pkg/protoext/exttype.proto")
-			fieldType = "exttype.NullInt64"
+			if col.IsUnsigned() {
+				fieldType = "exttype.NullUint64"
+			} else {
+				fieldType = "exttype.NullInt64"
+			}
 		} else {
 			if col.IsUnsigned() {
 				fieldType = "uint64"
