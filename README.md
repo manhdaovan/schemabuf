@@ -7,7 +7,7 @@ Generates a protobuf schema from your mysql database schema.
 ### Uses
 #### Use from the command line:
 
-`go install github.com/mcos/schemabuf`
+`go install github.com/manhdaovan/schemabuf`
 
 ```
 $ schemabuf -h
@@ -48,7 +48,7 @@ $ schemabuf -host my.database.com -port 3307 -user foo -schema bar -package my_p
 #### Use as an imported library
 
 ```go
-import "github.com/mcos/schemabuf"
+import "github.com/manhdaovan/schemabuf"
 
 func main() {
     connStr := config.get("dbConnStr")

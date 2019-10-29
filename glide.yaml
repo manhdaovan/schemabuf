@@ -1,4 +1,4 @@
-package: github.com/mcos/schemabuf
+package: github.com/manhdaovan/schemabuf
 import:
 - package: github.com/chuckpreslar/inflect
 - package: github.com/go-sql-driver/mysql
