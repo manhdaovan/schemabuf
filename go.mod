@@ -1,4 +1,4 @@
-module schemabuf
+module github.com/manhdaovan/schemabuf
 
 go 1.12
 
