@@ -9,7 +9,7 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	"github.com/manhdaovan/schemabuf/schemabuf"
+	"schemabuf/schemabuf"
 )
 
 func main() {
