@@ -43,6 +43,7 @@ func main() {
 		FieldCommentPrefix:   cmtInfo[0],
 		FieldCommentPosition: cmtInfo[1],
 		GoPackage:            *goPkgStr,
+		Schema:               *schema,
 	}
 	s, err := schemabuf.GenerateSchema(db, ignoreTables, genOptions)
 
